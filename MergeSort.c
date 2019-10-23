@@ -17,7 +17,7 @@ void merge(int *v, int inicio, int meio, int fim){
     int com1 = inicio;
     int com2 = meio+1;
     int comAux = 0;
-    int *vAux = (int *) malloc(fim-inicio+1 * sizeof(int));
+    int *vAux = (int *) malloc( (fim-inicio+1) * sizeof(int));
 
     while(com1 <= meio && com2 <=fim){
         if(v[com1] <= v[com2]){
