@@ -35,10 +35,11 @@ Fila * fila_cria (int maxTamanho){
 }
 
 Fila * fila_copia (Fila * p){
+    int i;
     Fila * q = fila_cria(p->tamanhoMax);
 
     for(i=p->inicio;i<p->final;i++){
-        q->elementos[i] = malloc(sizeof(char) * strlen(p->elementos[i) + 1);
+        q->elementos[i] = malloc(sizeof(char) * strlen(p->elementos[i]) + 1);
         strcpy(q->elementos[i],p->elementos[i]); 
     }
 
