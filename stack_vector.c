@@ -99,8 +99,8 @@ char * pilha_imprime  (Pilha * p){
  
     if(p->tamanho == 0) return aux;
    
-    for(i=0;i<pilha_obtem_tamanho(p);i++){
-        if(i==0) sprintf(aux, "%s ", p->elementos[i]);
+    for(i=pilha_obtem_tamanho(p);i>=0;i--){
+        if(i==pilha_obtem_tamanho(p)) sprintf(aux, "%s ", p->elementos[i]);
             else sprintf(aux, "%s%s ", aux, p->elementos[i]);
     }
  
