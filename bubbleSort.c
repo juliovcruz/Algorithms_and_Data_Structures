@@ -15,7 +15,7 @@ void bubbleSort(int *v, int N) {
     while(N>1 && flag){
         flag = 0;
 
-        for(i=0;i<N;i++){
+        for(i=0;i<N-1;i++){
             if(v[i]>v[i+1]){
                 aux = v[i+1];
                 v[i+1] = v[i];
